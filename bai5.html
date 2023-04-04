@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bài 5: Hãy liệt kê các số trong mảng 1 chiều các số thực thuộc đoạn [x, y] cho trước</p>
+    <script>
+        function CacSoTrongDoanXY(arr, x, y) {
+  console.log(`Các số trong mảng thuộc đoạn ${x},${y} cho trước là: `);
+  for (let i = 0; i < arr.length; i++) {
+    if (x <= arr[i] && arr[i] <= y) {
+      console.log(arr[i]);
+    }
+  }
+}
+​
+CacSoTrongDoanXY([5, 2, 6, 1, -5, 10], 1, 9);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bài 6: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn giá trị tuyệt đối của giá trị đứng liền sau nó</p>
+    <script>
+        function GiaTriTrongMangLonHonGiaTriTuyetDoiDangSauNo(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > Math.abs(arr[i+1])) {
+            count++;
+            console.log(arr[i]);
+        }
+        if(count ==0){
+            console.log("Not");
+        }        
+    }
+}
+GiaTriTrongMangLonHonGiaTriTuyetDoiDangSauNo([1,4,3,6,-7,6,-5])
+    </script>
+</body>
+</html>
